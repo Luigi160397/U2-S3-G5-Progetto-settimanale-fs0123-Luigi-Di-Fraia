@@ -3,6 +3,8 @@ const token =
 
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 
+const spinner = document.querySelector(".spinner-border");
+
 fetch(url, {
   headers: {
     Authorization: `Bearer ${token}`
@@ -12,6 +14,7 @@ fetch(url, {
   .then(data => {
     const row = document.querySelector("#contenuto .row");
     row.innerHTML = "";
+    spinner.style.display = "none";
     const prodotti = data;
     for (const prodotto of prodotti) {
       createCard(prodotto.name, prodotto.brand, prodotto.imageUrl, prodotto.price, prodotto._id);
@@ -26,7 +29,7 @@ const createCard = (name, brand, imgUrl, price, id) => {
   row.appendChild(col);
 
   col.innerHTML = `<div class="card shadow">
-  <img style="object-fit: cover; object-position: top;
+  <img style="object-fit: cover; object-position: center;
   height: 200px;" src="${imgUrl}"  class="card-img-top img-fluid" alt="card-pic" />
   <div class="card-body text-center">
     <h5 class="card-title">${name}</h5>

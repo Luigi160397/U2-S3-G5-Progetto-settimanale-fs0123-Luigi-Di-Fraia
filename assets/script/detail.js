@@ -5,6 +5,7 @@ const url = "https://striveschool-api.herokuapp.com/api/product/";
 const URLParams = new URLSearchParams(window.location.search);
 const selectedId = URLParams.get("id");
 const endpoint = url + selectedId;
+const spinner = document.querySelector(".spinner-border");
 
 fetch(endpoint, {
   headers: {
@@ -13,6 +14,7 @@ fetch(endpoint, {
 })
   .then(res => res.json())
   .then(data => {
+    spinner.style.display = "none";
     const row = document.querySelector("#contenuto .row");
     row.innerHTML = "";
     const prodotto = data;
