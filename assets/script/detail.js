@@ -34,7 +34,7 @@ const createCard = (name, brand, imgUrl, price, description) => {
   <img class="img-fluid card-img-top" style="object-fit: cover; object-position: top;
   height: 350px;" src="${imgUrl}" alt="${name}" />
   <div class="card-body text-center">
-    <h5 class="card-title display-5"><small>Nome del prodotto:</small> ${name}</h5>
+    <h5 class="card-title display-5">${name}</h5>
     <h4 class="card-text"><small>Brand:</small> ${brand}</h4>
     <p class="card-text"><small>Prezzo:</small> ${price}€</p>
     <p class="card-text"><small>Descrizione del prodotto:</small> ${description}</p>
