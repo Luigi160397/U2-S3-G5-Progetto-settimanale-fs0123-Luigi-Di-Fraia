@@ -36,8 +36,8 @@ const createCard = (name, brand, imgUrl, price, id) => {
     <p class="card-text">${brand}</p>
     <p class="card-text">${price}€</p>
     <div class="d-flex justify-content-center gap-2">
-      <a href="detail.html?id=${id}" class="btn btn-primary text-nowrap">Scopri di più</a>
-      <a href="backoffice.html?id=${id}" class="btn btn-outline-primary">Modifica</a>
+      <a href="detail.html?id=${id}" class="btn btn-success text-nowrap">Scopri di più</a>
+      <a href="backoffice.html?id=${id}" class="btn btn-outline-success">Modifica</a>
     </div>
   </div>
 </div>`;
