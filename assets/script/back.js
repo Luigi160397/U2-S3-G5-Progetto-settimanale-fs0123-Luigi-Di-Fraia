@@ -48,11 +48,7 @@ const gestisciSubmit = event => {
       Authorization: `Bearer ${token}`,
       "Content-Type": "application/json"
     }
-  })
-    .then(() => {
-      window.location.href = "index.html";
-    })
-    .catch(error => console.log(error));
+  }).catch(error => console.log(error));
 };
 
 const cancellaProdotto = () => {
