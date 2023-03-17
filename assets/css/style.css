@@ -4,3 +4,64 @@
 .card-text {
   text-transform: capitalize;
 }
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  filter: grayscale(100%);
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #212529;
+}
+
+.nav-link:hover {
+  color: #198754;
+}
+
+#contenuto {
+  background-color: #f8f9fa;
+}
+
+#titolo {
+  color: #212529;
+}
+
+.spinner-border {
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-link,
+.card {
+  transition: transform 0.2s ease-out;
+}
+
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
