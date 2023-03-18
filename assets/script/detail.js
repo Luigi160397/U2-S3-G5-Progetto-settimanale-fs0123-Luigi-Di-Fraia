@@ -30,7 +30,7 @@ const createCard = (name, brand, imgUrl, price, description) => {
   col.setAttribute("class", "col");
   row.appendChild(col);
 
-  col.innerHTML = `<div class="card shadow-lg">
+  col.innerHTML = `<div id="dettaglio" class="card shadow-lg">
   <img class="img-fluid card-img-top" style="object-fit: cover; object-position: top;
   height: 350px;" src="${imgUrl}" alt="${name}" />
   <div class="card-body text-center">
