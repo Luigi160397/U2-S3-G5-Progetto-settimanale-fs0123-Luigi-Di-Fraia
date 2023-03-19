@@ -29,7 +29,7 @@ const createCard = (name, brand, imgUrl, price, id) => {
   row.appendChild(col);
 
   col.innerHTML = `<div class="card shadow">
-  <img style="object-fit: cover; object-position: center;
+  <img style="object-fit: cover; object-position: top;
   height: 200px;" src="${imgUrl}"  class="card-img-top img-fluid" alt="card-pic" />
   <div class="card-body text-center">
     <h5 class="card-title text-capitalize">${name}</h5>
