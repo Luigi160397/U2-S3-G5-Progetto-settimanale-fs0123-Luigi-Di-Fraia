@@ -61,11 +61,6 @@
   position: relative;
 }
 
-#hero .d-flex {
-  min-height: 400px;
-  padding-top: 80px;
-}
-
 #hero img {
   position: absolute;
   top: 0;
